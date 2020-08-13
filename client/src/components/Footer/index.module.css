@@ -20,7 +20,7 @@
 }
 
 .footer:hover {
-   background: #fff;
+   background: rgb(215, 218, 220);
    transition: all 2s;
 }
 

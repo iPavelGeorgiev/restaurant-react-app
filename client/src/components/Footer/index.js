@@ -5,7 +5,7 @@ const Footer = () => {
    return (
       <footer>
          <div className={styles.footer}>
-            <p>@Palevry : Designed by <span>Pavel Genadiev Georgiev</span></p>
+            <p>@Palevro : Designed by <span>Pavel Genadiev Georgiev</span></p>
          </div>
       </footer>
    )
