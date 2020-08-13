@@ -26,28 +26,29 @@ class NavigationBar extends Component {
       const links = getNavigation(false, {});
 
       return (
-            <nav className={navbar}>
-               <div className={styles["hamburger-menu"]} onClick={this.toggle}>
-                  <div className={`${styles.line} ${styles["line-1"]}`}></div>
-                  <div className={`${styles.line} ${styles["line-2"]}`}></div>
-                  <div className={`${styles.line} ${styles["line-3"]}`}></div>
-               </div>
+         <nav className={navbar}>
+            <div className={styles["hamburger-menu"]} onClick={this.toggle}>
+               <div className={`${styles.line} ${styles["line-1"]}`}></div>
+               <div className={`${styles.line} ${styles["line-2"]}`}></div>
+               <div className={`${styles.line} ${styles["line-3"]}`}></div>
+            </div>
 
-               <ul className={styles["nav-list"]}>
-                  {
-                     links.map(navElement => {
-                        return (
-                              <Link
-                                 key={navElement.title}
-                                 href={navElement.link}
-                                 title={navElement.title}
-                                 type="nav"
-                              />
-                        )
-                     })
-                  }
-               </ul>
-            </nav>
+            <ul className={styles["nav-list"]}>
+               {
+                  links.map(navElement => {
+                     return (
+                        <li className={styles["nav-item"]} key={navElement.title}>
+                           <Link
+                              href={navElement.link}
+                              title={navElement.title}
+                              type="nav"
+                           />
+                        </li>
+                     )
+                  })
+               }
+            </ul>
+         </nav >
       )
    }
 }
