@@ -1,5 +1,5 @@
 .footer{
-   position: absolute;
+   position: fixed;
    box-sizing: border-box;
    bottom: 0;
    height: 35px;
@@ -7,16 +7,17 @@
    padding: 8px 0px;
    background: rgba(255, 255, 255, 0);
    margin-top: 60px;
+   z-index: 100;
 }
 
 .footer p {
    text-align: center;
    color: rgb(162, 141, 99);
-   color: rgba(162, 141, 99, 0.4)
 }
 
 .footer p span{
-   font-weight: bold; 
+   font-weight: bold;
+   color: rgb(162, 141, 99);
 }
 
 .footer:hover {
