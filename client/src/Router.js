@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationBar from "./components/NavigationBar";
+import Main from "./pages/Main";
 
 import {
    BrowserRouter,
@@ -12,7 +12,7 @@ import {
    return (
        <BrowserRouter>
          <Switch>
-           <Route path="/" exact component={NavigationBar} />
+           <Route path="/" exact component={Main} />
          </Switch>
        </BrowserRouter>
    );
