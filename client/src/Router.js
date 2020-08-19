@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "./pages/Main";
+import AboutUs from "./pages/AboutUs";
 
 import {
    BrowserRouter,
@@ -13,6 +14,7 @@ import {
        <BrowserRouter>
          <Switch>
            <Route path="/" exact component={Main} />
+           <Route path="/about" component={AboutUs} />
          </Switch>
        </BrowserRouter>
    );
