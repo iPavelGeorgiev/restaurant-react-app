@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+ 
+.accordion-title {
+  background-color: rgb(162, 141, 99);
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 24px;
+}
+ 
+.accordion-title:hover,
+.active {
+  background-color: rgb(153, 126, 73);
+}
+ 
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+  font-weight: 600;
+  font-size: 20px;
+}
+ 
+.rotate {
+  transform: rotate(90deg);
+}
+ 
+.accordion-content {
+  overflow-y: hidden;
+  transition: max-height 0.6s ease;
+}
